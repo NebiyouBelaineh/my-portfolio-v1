@@ -17,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark" scroll-behavior="smooth">
+    <html lang="en" data-theme="forest" scroll-behavior="smooth">
       <body className={inter.className}>
         <Header/>
+        <main className="flex p-4 h-screen">
         {children}
+        </main>
         <Footer/>
       </body>
     </html>
