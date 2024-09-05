@@ -16,6 +16,42 @@ body {
  
 }
 
+/* consoleText */
+.hidden-consoleText {
+  opacity:0;
+}
+.console-container {
+ 
+  /* font-family:Khula; */
+  font-size:4em;
+  /* text-align:center; */
+  /* height:200px; */
+  width:100%;
+  /* display:block; */
+  /* position:absolute; */
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+.gradient-text {
+  background-image: linear-gradient(45deg, #fc5c7d, #6a82fb, #fc5c7d);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  color: transparent;
+}
+
+/* consoleText */
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
