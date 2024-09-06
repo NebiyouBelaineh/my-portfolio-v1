@@ -70,7 +70,7 @@ const ConsoleText = () => {
     }, []);
 
     return (
-        <div className='console-container'>
+        <div className='console-container text-[2rem] h-[100px] lg:text-[3rem]'>
             <span className='text-secondary font-bold font-serif text-left' ref={textRef} id="text"></span>
             <div
                 id="console"

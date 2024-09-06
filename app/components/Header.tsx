@@ -20,9 +20,10 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className='fixed flex md:justify-center top-0 right-0 left-0 p-6 md:p-4 mb-4 border-b-2 border-gray-500 bg-blur backdrop-blur-sm'>
+      <div className='fixed flex sm:justify-center top-0 right-0 left-0 p-6 md:p-4 mb-4 border-b-2 border-gray-500 bg-blur backdrop-blur-sm'>
         <nav className='hidden sm:flex text-xl font-bold text-neutral-content space-x-6'>
           <Link className="p-2 rounded border-b-4 border-primary hover:bg-secondary hover:border-neutral hover:text-secondary-content" href={"/"}>Home</Link>
+          <Link className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content" href={"/#projects"}>My Skills</Link>
           <Link className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content" href={"/#projects"}>My Projects</Link>
           <Link className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content" href={"/aboutme"}>My Journey</Link>
           <Link className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content" href={"/blog"}>My Blogs</Link>
@@ -31,8 +32,9 @@ const Header = () => {
           <MenuIcon id="burgerIcon" />
           <nav id="menu" className='hidden rounded sm:flex text-lg font-bold text-neutral-content bg-neutral'>
             <Link className="p-2 pl-4 block rounded border-b-4 border-primary hover:bg-secondary hover:text-secondary-content" href={"/"}>Home</Link>
-            <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/#projects"}>My Experience</Link>
-            <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/#aboutme"}>My Journey</Link>
+            <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/#skills"}>My Skills</Link>
+            <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/#projects"}>My Projects</Link>
+            <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/aboutme"}>My Journey</Link>
             <Link className="p-2 pl-4 block rounded border-primary hover:bg-secondary hover:text-secondary-content" href={"/blog"}>My Blogs</Link>
           </nav>
         </div>

@@ -5,14 +5,14 @@ import ConsoleText from './ConsoleText';
 const Hero: React.FC = () => {
 
     return (
-        <section id="hero" className="bg-base-200 py-16 md:p-20 flex">
-            <div className="w-3/5 mx-auto px-6 text-center md:text-left md:py-8">
-                {/* Headline */}
+        <div className='flex-row lg:flex'>
+            {/* Image Section */}
+            <div className='flex justify-center lg:w-2/5 order-1 lg:order-2 px-6 md:px-0 mx-auto w-[60%]'>
+                <Image className="rounded" alt="animated_coder" width={400} height={400} src={"/profile/annimated-coder.jpg"} />
+            </div>
+            {/* Text Section */}
+            <div className="w-full lg:w-3/5 mx-auto px-6 text-center lg:text-left md:py-8 order-2 lg:order-1">
                 <ConsoleText />
-                {/* Subheadline */}
-                
-
-                {/* Call to Action */}
                 <div className="mt-8 space-x-4">
                     <p className='text-lg md:text-xl font-semibold text-base-content text-justify'>
                         Explore my journey from biomedical to tech, dive into my projects, or reach out to discuss how I can contribute to your team!
@@ -31,10 +31,7 @@ const Hero: React.FC = () => {
                     </a>
                 </div>
             </div>
-            <div className='w-2/5'>
-                <Image alt="Nebiyou_Belaineh" width={600} height={600} src={"/profile/Nebiyou_Belaineh.jpg"} />
-            </div>
-        </section>
+        </div>
     );
 };
 
