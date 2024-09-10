@@ -9,6 +9,7 @@ const handjet = Handjet({ subsets: ['latin'],
 const ConsoleText = () => {
     const textRef = useRef<HTMLSpanElement>(null);
     const [visible, setVisible] = useState(true);
+    const [isMounted, setIsMounted] = useState(false);
 
     // Function to handle the typing effect
     const consoleText = (words: string[], id: string, colors: string[]) => {
@@ -54,8 +55,12 @@ const ConsoleText = () => {
         return () => clearInterval(interval);
     };
 
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
     // UseEffect to run the animation on mount
     useEffect(() => {
+        console.log("isMounted:", isMounted);
         consoleText(
             ['Hello World.', 'My name is Nebiyou.', "I'm a Software Engineer."],
             'text',
@@ -64,13 +69,13 @@ const ConsoleText = () => {
 
         const underscoreInterval = setInterval(() => {
             setVisible((prevVisible) => !prevVisible);
-        }, 400);
+        }, 600);
 
         return () => clearInterval(underscoreInterval);
-    }, []);
+    }, [isMounted]);
 
     return (
-        <div className='console-container text-[2rem] h-[100px] lg:text-[3rem]'>
+        <div className='console-container text-[2rem] h-[100px] lg:text-[3rem] lg:h-[150px]'>
             <span className='text-secondary font-bold font-serif text-left' ref={textRef} id="text"></span>
             <div
                 id="console"

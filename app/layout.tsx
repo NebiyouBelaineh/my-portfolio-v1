@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="forest" scroll-behavior="smooth">
       <body className={inter.className + 'flex flex-col min-h-screen'}>
-        <Header/>
+        <Header />
         <main className="p-4">
-        {children}
+          <ScrollToTop />
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

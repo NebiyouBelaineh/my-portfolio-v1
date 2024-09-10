@@ -11,10 +11,11 @@
 @media (prefers-color-scheme: dark) {
 
 }
-
-body {
+html {
   scroll-behavior: smooth;
 }
+
+body {}
 
 /* consoleText */
 .hidden-consoleText {
