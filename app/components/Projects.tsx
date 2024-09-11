@@ -9,7 +9,7 @@ const projects = [
     technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'MongoDB Atlas', 'Express.js'],
     image: '/images/blockevents_logo.png', // Placeholder for the project image
     link: '#',
-    repo: "https://www.github.com"
+    repo: "https://github.com/NebiyouBelaineh/block-events-backend"
   },
   {
     title: 'DishCovery: Recipe Finder Web App',
@@ -17,7 +17,7 @@ const projects = [
     technologies: ['MySQL', 'Flask', 'Python', 'Javascript', 'Bootstrap', 'CSS'],
     image: '/images/dishcovery_logo.png', // Placeholder for the project image
     link: 'https://dishcovery-six.vercel.app/',
-    repo: "https://www.github.com"
+    repo: "https://github.com/NebiyouBelaineh/Dishcovery"
   },
   {
     title: 'Airbnb-Clone',
@@ -25,7 +25,7 @@ const projects = [
     technologies: ['Flask', 'Python', 'MySQL'],
     image: '/images/hbnb.png', // Placeholder for the project image
     link: '#',
-    repo: "https://www.github.com"
+    repo: "https://github.com/NebiyouBelaineh/AirBnB_clone_v4"
   },
   {
     title: 'Keeper Note taking app',
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 relative"
-                width={200}
+                width={300}
                 height={200}
               />
               <div className="p-6">
@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
                   <Link
                     href={project.link}
                     target="_blank"
-                    className="bg-accent rounded px-2 py-2 hover:bg-info hover:scale-105 transition-colors"
+                    className={project.link === '#' ? "hidden" :"bg-accent rounded px-2 py-2 hover:bg-info hover:scale-105 transition-colors"}
                   >
                     Demo
                   </Link>
