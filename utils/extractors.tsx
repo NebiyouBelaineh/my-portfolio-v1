@@ -6,8 +6,8 @@ export function extractText(content: string): string {
     // Convert HTML to plain text
     const plainText = htmlToText(content, {
         wordwrap: 130, // Adjust as needed
-        ignoreImage: true, // Ignore images in the text
-        ignoreHref: true, // Ignore links
+        // ignoreImage: true, // Ignore images in the text
+        // ignoreHref: true, // Ignore links
     });
 
     // Trim text to 200 characters
