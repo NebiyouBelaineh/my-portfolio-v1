@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
             <div className='flex-row lg:flex'>
                 {/* Image Section */}
                 <div className='flex justify-center lg:w-2/5 order-1 lg:order-2 px-6 md:px-0 mx-auto w-[60%]'>
-                    <Image className="rounded min-w-[400px]" priority={true} alt="animated_coder" width={400} height={400} src={"/profile/annimated-coder.jpg"} />
+                    <Image className="rounded min-w-[400px]" priority={true} alt="animated_coder" width={400} height={400} src={"/images/annimated-coder.jpg"} />
                 </div>
                 {/* Text Section */}
                 <div className="w-full lg:w-3/5 mx-auto px-6 text-center lg:text-left md:py-8 order-2 lg:order-1">
