@@ -7,7 +7,7 @@ const projects = [
     title: 'Block Events: Event Management App',
     description: 'An event management app where users can browse, post, register for events and get updates on events they have registered for. Built with Next.js, MongoDB Atlas and Node.js.',
     technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'MongoDB Atlas', 'Express.js'],
-    image: 'https://picsum.photos/seed/picsum/200/300', // Placeholder for the project image
+    image: '/images/blockevents_logo.png', // Placeholder for the project image
     link: '#',
     repo: "https://www.github.com"
   },
@@ -15,7 +15,7 @@ const projects = [
     title: 'DishCovery: Recipe Finder Web App',
     description: 'A recipe finder app that takes in user\'s ingredients and dish preferences and returns a list of recipes',
     technologies: ['MySQL', 'Flask', 'Python', 'Javascript', 'Bootstrap', 'CSS'],
-    image: 'https://picsum.photos/seed/picsum/200/300', // Placeholder for the project image
+    image: '/images/dishcovery_logo.png', // Placeholder for the project image
     link: 'https://dishcovery-six.vercel.app/',
     repo: "https://www.github.com"
   },
@@ -23,7 +23,7 @@ const projects = [
     title: 'Airbnb-Clone',
     description: 'An AirBnB clone built with Flask, Jinja2, CSS, and MySQL.',
     technologies: ['Flask', 'Python', 'MySQL'],
-    image: 'https://picsum.photos/seed/picsum/200/300', // Placeholder for the project image
+    image: '/images/hbnb.png', // Placeholder for the project image
     link: '#',
     repo: "https://www.github.com"
   },
@@ -39,7 +39,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A personal portfolio website showcasing software engineering projects.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: 'https://picsum.photos/seed/picsum/200/300', // Placeholder for the project image
+    image: '/images/landingPage.png', // Placeholder for the project image
     link: '#',
     repo: "https://www.github.com"
   },
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 relative"
                 width={200}
                 height={200}
               />
@@ -89,6 +89,7 @@ const Projects: React.FC = () => {
                     href={project.repo}
                     target="_blank"
                     className="bg-accent rounded px-2 py-2 hover:bg-info hover:scale-105 transition-colors"
+                    rel="noopener noreferrer"
                   >
                     Repo
                   </Link>

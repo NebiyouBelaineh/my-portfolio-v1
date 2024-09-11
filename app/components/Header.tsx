@@ -6,7 +6,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   const currentPath = usePathname();
-  console.log(currentPath);
   
   useEffect(() => {
     const handleMenuToggle = () => {
@@ -27,20 +26,20 @@ const Header = () => {
       <div className='fixed flex sm:justify-center top-0 right-0 left-0 p-6 md:p-4 mb-4 border-b-2 border-gray-500 bg-blur backdrop-blur-lg'>
         <nav className='hidden sm:flex text-xl font-bold text-neutral-content space-x-6 rounded'>
           <Link className="p-2 rounded hover:bg-secondary hover:text-secondary-content"
-            href={"/"}>Home</Link>
+            href={"/#hero"}>Home</Link>
           <Link
             className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content"
-            href={"/#skills"}>
+            href={currentPath === "/" ? "#skills" : "/#skills"}>
             My Skills
           </Link>
           <Link
             className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content"
-            href={"#projects"}>
+            href={currentPath === "/" ? "#projects" : "/#projects"}>
             My Projects
           </Link>
           <Link
             className="p-2 rounded border-primary hover:border-neutral hover:bg-secondary hover:text-secondary-content"
-            href={"/aboutme"}>
+            href={"/myJourney"}>
             My Journey
           </Link>
           <Link
@@ -75,7 +74,7 @@ const Header = () => {
               className="p-2
              pl-4 
              block rounded border-primary hover:bg-secondary hover:text-secondary-content"
-              href={"/aboutme"}>
+              href={"/myJourney"}>
               My Journey
             </Link>
             <Link
