@@ -3,7 +3,7 @@ import Image from 'next/image';
 import ConsoleText from './ConsoleText';
 
 const Hero: React.FC = () => {
-
+    
     return (
         <section id="hero" className="bg-base-300 mt-20 mb-10 py-20 md:px-10 rounded">
 
@@ -20,7 +20,8 @@ const Hero: React.FC = () => {
                             Explore my journey from biomedical to tech, dive into my projects, or reach out to discuss how I can contribute to your team!
                         </p>
                         <a
-                            href="#resume"
+                            href="/resume/Resume-Nebiyou_Seifu_Belaineh_2024.pdf"
+                             download="Nebiyou_Belaineh_Resume.pdf"
                             className="inline-block my-4 px-8 py-3 bg-primary text-primary-content text-lg font-semibold rounded-md shadow-md hover:scale-105 transition-colors"
                         >
                             View My Resume
