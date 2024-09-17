@@ -26,7 +26,7 @@ This is my personal portfolio website, built to showcase my journey from Biomedi
 <!-- - [❓ FAQ (OPTIONAL)](#faq) -->
 - [📝 License](#license)
 
-## ✅ Features
+## ✅ Features <a name="features"></a>
 
 - Hero section with an introduction and call to action (view resume and contact).
 - Project showcase with carousel/card layout.
@@ -37,7 +37,7 @@ This is my personal portfolio website, built to showcase my journey from Biomedi
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🛠️ Technologies
+## 🛠️ Technologies <a name="technologies"></a>
 
 - **Frontend**: Next.js 14, React.js, TypeScript
 - **Styling**: Tailwind CSS
@@ -48,7 +48,7 @@ This is my personal portfolio website, built to showcase my journey from Biomedi
 
 
 
-## - [🚀 Live Demo](#live-demo)
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - The site is deployed on vercel. You can check it out [here](https://my-portfolio-v1-woad.vercel.app/).
 
