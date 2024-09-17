@@ -41,14 +41,14 @@ const projects = [
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     image: '/images/landingPage.png', // Placeholder for the project image
     link: '#',
-    repo: "https://www.github.com"
+    repo: "https://github.com/NebiyouBelaineh/my-portfolio-v1"
   },
   // Add more projects as needed
 ];
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-12 bg-base-300 rounded text-white mb-10">
+    <section id="projects" className="py-20 bg-base-300 rounded text-white mb-10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 relative"
+                className="w-full h-40"
                 width={300}
                 height={200}
               />

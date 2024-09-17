@@ -60,7 +60,6 @@ const ConsoleText = () => {
     }, []);
     // UseEffect to run the animation on mount
     useEffect(() => {
-        console.log("isMounted:", isMounted);
         consoleText(
             ['Hello World.', 'My name is Nebiyou.', "I'm a Software Engineer."],
             'text',
