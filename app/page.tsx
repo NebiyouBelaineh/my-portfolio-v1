@@ -5,9 +5,11 @@ import Projects from "./components/Projects";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <SkillMatrix />
-      <Projects />
+      <div className="container max-w-[1280px] mx-auto">
+        <Hero />
+        <SkillMatrix />
+        <Projects />
+      </div>
     </>
   );
 }
