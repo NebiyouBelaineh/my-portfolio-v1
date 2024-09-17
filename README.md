@@ -1,7 +1,4 @@
-<a name="readme-top" id="readme-top"</a>
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+<div align="center" id="readme-top">
   <img src="public/images/annimated-coder.jpg" alt="logo" width="400"  height="auto" />
   <br/>
 
