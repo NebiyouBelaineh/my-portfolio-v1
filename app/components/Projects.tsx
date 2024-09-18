@@ -7,7 +7,7 @@ const projects = [
     title: 'Block Events: Event Management App',
     description: 'An event management app where users can browse, post, register for events and get updates on events they have registered for. Built with Next.js, MongoDB Atlas and Node.js.',
     technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'MongoDB Atlas', 'Express.js'],
-    image: '/images/blockevents_logo.png', // Placeholder for the project image
+    image: '/images/block-events-logo.png',
     link: '#',
     repo: "https://github.com/NebiyouBelaineh/block-events-backend"
   },
@@ -15,7 +15,7 @@ const projects = [
     title: 'DishCovery: Recipe Finder Web App',
     description: 'A recipe finder app that takes in user\'s ingredients and dish preferences and returns a list of recipes',
     technologies: ['MySQL', 'Flask', 'Python', 'Javascript', 'Bootstrap', 'CSS'],
-    image: '/images/dishcovery_logo.png', // Placeholder for the project image
+    image: '/images/dishcovery_landing.png',
     link: 'https://dishcovery-six.vercel.app/',
     repo: "https://github.com/NebiyouBelaineh/Dishcovery"
   },
@@ -23,7 +23,7 @@ const projects = [
     title: 'Airbnb-Clone',
     description: 'An AirBnB clone built with Flask, Jinja2, CSS, and MySQL.',
     technologies: ['Flask', 'Python', 'MySQL'],
-    image: '/images/hbnb.png', // Placeholder for the project image
+    image: '/images/hbnb-logo.png',
     link: '#',
     repo: "https://github.com/NebiyouBelaineh/AirBnB_clone_v4"
   },
@@ -31,19 +31,18 @@ const projects = [
     title: 'Keeper Note taking app',
     description: 'A note taking app that allows users to create, edit, and delete notes.',
     technologies: ['React.js', 'JavaScript', 'CSS'],
-    image: 'https://picsum.photos/seed/picsum/200/300', // Placeholder for the project image
+    image: '/images/keeper_img.jpeg',
     link: '#',
-    repo: "https://www.github.com"
+    repo: "https://github.com/NebiyouBelaineh/keeper-note-app"
   },
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio website showcasing software engineering projects.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: '/images/landingPage.png', // Placeholder for the project image
+    image: '/images/landingPage.png',
     link: '#',
     repo: "https://github.com/NebiyouBelaineh/my-portfolio-v1"
   },
-  // Add more projects as needed
 ];
 
 const Projects: React.FC = () => {
@@ -60,7 +59,7 @@ const Projects: React.FC = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-40"
+                className="w-full h-45 transform transition-transform duration-300 hover:scale-110"
                 width={300}
                 height={200}
               />
