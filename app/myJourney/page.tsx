@@ -5,8 +5,8 @@ const aboutme = () => {
   return (
     <div className='bg-base-300 mt-20 mb-10 md:px-10 rounded'>
       <div className='flex-row lg:flex justify-center'>
-      <div className='flex justify-center order-1 lg:order-2 lg:w-2/5'>
-          <Image src="/images/Nebiyou_Belaineh.jpg" alt="Nebiyou_Belaineh" width={400} height={400} className="w-[400] mx-4"></Image>
+        <div className='flex justify-center order-1 lg:order-2 lg:w-2/5'>
+          <Image src="/images/Nebiyou_Belaineh.jpg" alt="Nebiyou_Belaineh" width={400} height={400} className="w-[400px] h-[400px] object-cover mx-4"></Image>
         </div>
         <div className='w-full lg:w-3/5 px-6 text-center md:text-left md:py-8 order-2 lg:order-1 py-6'>
           <p className={"mt-4 text-2xl md:text-2xl font-bold text-base-content"}>

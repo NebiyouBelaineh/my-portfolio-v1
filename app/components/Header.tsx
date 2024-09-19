@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className='fixed md:flex md:justify-center top-0 right-0 left-0 p-6 md:p-4 mb-4 border-b-2 border-gray-500 bg-blur backdrop-blur-lg'>
+      <div className='fixed md:flex md:justify-center top-0 right-0 left-0 p-6 md:p-4 mb-4 border-b-2 border-gray-500 bg-blur backdrop-blur-lg z-10'>
         <nav className='hidden md:flex text-xl font-bold text-neutral-content space-x-6 rounded'>
           <Link className="p-2 rounded hover:bg-secondary hover:text-secondary-content"
             href={"/#hero"}>Home</Link>
