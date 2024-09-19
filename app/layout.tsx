@@ -39,7 +39,7 @@ export default function RootLayout({
       </Script>
       <body className={inter.className + 'flex flex-col min-h-screen'}>
         <Header />
-        <main className="p-4">
+        <main className="p-4 container max-w-[1280px] mx-auto">
           <ScrollToTop />
           <Suspense fallback={<Loading />}>
             {children}

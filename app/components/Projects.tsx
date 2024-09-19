@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-45 transform transition-transform duration-300 hover:scale-110"
+                className="w-full h-[200px] min-h-[200px] max-h-[200px] object-cover bg-base-300 transform transition-transform duration-300 hover:scale-110"
                 width={300}
                 height={200}
               />
