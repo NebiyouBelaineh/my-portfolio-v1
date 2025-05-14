@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                             Explore my journey from biomedical to tech, dive into my projects, or reach out to discuss how I can contribute to your team!
                         </p>
                         <a
-                            href="/resume/Resume-Nebiyou_Seifu_Belaineh_2024.pdf"
+                            href="/resume/Resume-Nebiyou_Seifu_Belaineh_2025.pdf"
                              download="Nebiyou_Belaineh_Resume.pdf"
                             className="inline-block my-4 px-8 py-3 bg-primary text-primary-content text-lg font-semibold rounded-md shadow-md hover:scale-105 transition-colors"
                         >
