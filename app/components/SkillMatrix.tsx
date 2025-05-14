@@ -21,7 +21,7 @@ const SkillMatrix: React.FC = () => {
     datasets: [
       {
         label: 'Programming Languages Proficiency',
-        data: [85, 80, 90, 70, 70], // Skill levels (out of 100)
+        data: [85, 85, 80, 70, 70], // Skill levels (out of 100)
         backgroundColor: 'rgba(54, 162, 235, 0.2)', // Radar chart fill color
         borderColor: '#FABC3F', // Line color
         borderWidth: 2, // Line thickness
@@ -31,11 +31,11 @@ const SkillMatrix: React.FC = () => {
     ],
   };
   const dataTools = {
-    labels: ['React Js', 'Next Js', 'Node.js', 'Flask', 'Express Js'],
+    labels: ['React Js', 'Next Js', 'Nest Js', 'Flask', 'Express Js'],
     datasets: [
       {
         label: 'Frameworks Proficiency',
-        data: [75, 70, 85, 80, 80], // Skill levels (out of 100)
+        data: [75, 80, 85, 80, 80], // Skill levels (out of 100)
         backgroundColor: 'rgba(54, 162, 235, 0.2)', // Radar chart fill color
         borderColor: '#FF8225', // Line color
         borderWidth: 2, // Line thickness
@@ -49,7 +49,7 @@ const SkillMatrix: React.FC = () => {
     datasets: [
       {
         label: 'Databases Proficiency',
-        data: [60, 85, 75, 85], // Skill levels (out of 100)
+        data: [90, 85, 75, 85], // Skill levels (out of 100)
         backgroundColor: 'rgba(54, 162, 235, 0.2)', // Radar chart fill color
         borderColor: '#FAB8B8', // Line color
         borderWidth: 2, // Line thickness
