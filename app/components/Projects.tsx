@@ -4,6 +4,14 @@ import React from 'react';
 
 const projects = [
   {
+    title: 'YC-Directory',
+    description: 'A webapp that allows users to post startup pitches. Project demonstrates next js 16 features. Includes PPR, SSR and ISR strategies, CMS integration with Sanity and Sentry integration to monitor bugs and crashes. ',
+    technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'Sanity CMS', 'Sentry'],
+    image: '/images/yc-directory-next-16.png',
+    link: 'https://yc-directory-next-16.vercel.app/',
+    repo: "https://github.com/NebiyouBelaineh/yc_directory_next_16"
+  },
+  {
     title: 'Block Events: Event Management App',
     description: 'An event management app where users can browse, post, register for events and get updates on events they have registered for. Built with Next.js, MongoDB Atlas and Node.js.',
     technologies: ['Next.js', 'Node.js', 'Tailwind CSS', 'MongoDB Atlas', 'Express.js'],
